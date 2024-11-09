@@ -8,54 +8,44 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	    <!-- Header Section with ARIA role heading -->
-    <header role="heading" aria-level="1">
-        <h1>Welcome to My Accessible Portfolio</h1>
-    </header>
-
-    <!-- Navigation Section with ARIA role navigation -->
-    <nav role="navigation">
-        <ul role="list">
-            <li role="listitem"><a href="#about">About Me</a></li>
-            <li role="listitem"><a href="#skills">Skills</a></li>
-            <li role="listitem"><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Section with brief description -->
-    <section id="about">
-        <!-- Profile Image with ARIA role img and alt text for accessibility -->
-        <img src="profile-image.jpg" alt="A professional photo of me" role="img" width="200">
-
-        <!-- Brief Description -->
-        <p>Hello! I am a passionate web developer with experience in building accessible and responsive websites. I specialize in front-end development, creating intuitive and user-friendly experiences.</p>
-    </section>
-
-    <!-- Skills Section with ARIA role section -->
-    <section id="skills" role="region">
-        <h2 role="heading" aria-level="2">My Skills</h2>
-        <ul role="list">
-            <li role="listitem">HTML & CSS</li>
-            <li role="listitem">JavaScript</li>
-            <li role="listitem">React</li>
-            <li role="listitem">Node.js</li>
-        </ul>
-    </section>
-
-    <!-- Projects Section with ARIA role section -->
-    <section id="projects" role="region">
-        <h2 role="heading" aria-level="2">Projects</h2>
-        <ul role="list">
-            <li role="listitem">Project 1: Personal Portfolio</li>
-            <li role="listitem">Project 2: E-commerce Website</li>
-            <li role="listitem">Project 3: Web-based Task Manager</li>
-        </ul>
-    </section>
-
-	
     <script type="text/javascript" src="./script.js">
 </script>
 
 </body>
+	<header>
+    <h1 role="heading">My Accessible Portfolio</h1>
+  </header>
+
+  <!-- Navigation bar with ARIA role -->
+  <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About Me</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Image Section with ARIA role and alt text for accessibility -->
+  <section id="about">
+    <h2 role="heading">About Me</h2>
+    <img role="img" src="profile.jpg" alt="A professional portrait of me" />
+    <p>Hi, I'm Yuvraj Singh, a web developer with a passion for creating accessible and user-friendly web experiences.</p>
+  </section>
+
+  <!-- List of projects with ARIA role -->
+  <section id="projects">
+    <h2 role="heading">My Projects</h2>
+    <ul role="list">
+      <li role="listitem">Project 1: A responsive website for a non-profit organization.</li>
+      <li role="listitem">Project 2: An accessible mobile app for easy navigation.</li>
+      <li role="listitem">Project 3: A blog platform with a focus on accessibility features.</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section with ARIA role -->
+  <section id="contact">
+    <h2 role="heading">Contact Me</h2>
+    <p>If you'd like to collaborate or have any questions, feel free to reach out!</p>
+  </section>
 
 </html>
